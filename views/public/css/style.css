@@ -118,7 +118,7 @@ color: #fff;
 .navbar_container{
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 90px;
     z-index: 1;
     width: 100%;
     max-width: 850px;
@@ -145,7 +145,6 @@ color: #fff;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 99;
-    height: 60vh;
     font-size: 1.2rem;
     
 }
@@ -212,6 +211,7 @@ opacity: 0;
         
     }  
 }
+
 /*Intro*/
 .intro{
     background: radial-gradient(#fff,pink);

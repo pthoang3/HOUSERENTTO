@@ -6,13 +6,12 @@ var nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
 const exphbs = require("express-handlebars");
 const fs= require('fs');
-var jsonParser = bodyParser.json()
 // MODULE INITIALIZATION
 var HTTP_PORT = process.env.PORT || 8080;
 
 app.engine(".hbs", exphbs({ extname: ".hbs" }));
 app.set("view engine", ".hbs");
-app.use(json);
+
 
 app.use(bodyParser.urlencoded({ extended: false }));
  

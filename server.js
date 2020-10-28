@@ -7,7 +7,7 @@ const bodyParser = require("body-parser");
 const exphbs = require("express-handlebars");
 const fs= require('fs');
 // MODULE INITIALIZATION
-var HTTP_PORT = process.env.PORT || 8080;
+const HTTP_PORT = process.env.PORT || 8080;
 
 app.engine(".hbs", exphbs({ extname: ".hbs" }));
 app.set("view engine", ".hbs");

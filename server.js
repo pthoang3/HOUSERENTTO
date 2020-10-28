@@ -12,9 +12,9 @@ var HTTP_PORT = process.env.PORT || 8080;
 
 app.engine(".hbs", exphbs({ extname: ".hbs" }));
 app.set("view engine", ".hbs");
+app.use(json);
 
 app.use(bodyParser.urlencoded({ extended: false }));
-var urlencodedParser = bodyParser.urlencoded({ extended: false })
  
 
 const STORAGE = multer.diskStorage({

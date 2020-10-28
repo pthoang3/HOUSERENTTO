@@ -1,0 +1,347 @@
+<!---->
+            <!DOCTYPE html>
+            <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>PTH Airbnb</title>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+                    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <link rel="stylesheet" href="../public/css/style.css">
+                    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+                </head>
+                <body>
+                  {{> header}}
+              <div class="intro">
+                    <div class="row">
+                        <div class="col-2">
+                          <form id="search_form" method="post" action="https://httpbin.org/post" onsubmit="formValidation();">
+                            <h1>Earn money as an Airbnb host</h1>
+                            <label>Location</label>
+                            <br>
+                            <select class="search_select" name="location">
+                                <option value="">Please select a city</option>
+                                <option value="Toronto">Toronto</option>
+                                <option value="London">Missisauga</option>
+                                <option value="Missisauga">Ottawa</option>
+                                <option value="Brampton">Vancouver</option>
+                            </select>
+                            <br>
+                            <label>Type of house:</label>
+                            <br>
+                            <select class="search_select" name="Type of house">
+                              <option value="Entire House">Entire House</option>
+                              <option value="Private Room">Share Room</option>
+                              <option value="Shared room">Private Room</option>
+                            </select>
+                            <br>
+                            <label>Guests</label>
+                            <br>
+                            <select class="search_select" name="guest">
+                                <option value="1">1 guest</option>
+                                <option value="2">2 guests</option>
+                                <option value="3">3 guests</option>
+                                <option value="4">4 guests</option>
+                                <option value="5">5 guests</option>
+                                <option value="5">6 guests</option>
+                                <option value="5">7 guests</option>
+                            </select>
+                            <br>
+                            <div class="uploadphoto">
+                              <label for="upload"> House images
+                              <input id="photo" type="file" name="photo"/></label> 
+                            </div>
+                            <div id="search_button">
+                              
+                                <input type="submit" id="search_findButton" value="Submit">
+                            </div>
+                        </form>
+                        </div>
+                        <div class="col-2">
+                            <img src="../public/images/animation-house-drawing-image-child-png-favpng-mRx6PXeYFCQnQxUDsQ1tXAna1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            
+          </div>
+                <!--Products-->
+            <section id="product">
+            <div class="categories">
+                <h2 class="title">Vacation rentals for every style</h2>  
+                <div class="small-container"> 
+                 
+                <div class="col-6"> 
+                    <img src="../public/images/img1.jpg" alt="">
+                    <div class="content">
+                    <h4>Homes</h4>
+                    <p class="content">Comfortable with all essentials</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                    <img src="../public/images/hotel.jpg" alt="">
+                    <div class="content">
+                    <h4>Hotels</h4>
+                      <p class="content">Stylish accomodation and amenities</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <img src="../public/images/uniquestay.jpg" alt="">
+                    <div class="content">
+                    <h4>Unique Stay</h4>
+                      <p>Spaces that are more than just to sleep</p>
+                    </div>
+                </div>
+                </div>
+                </section> 
+            <!--Promotion Section-->
+            <div class="promotion_section">
+              <h2 class="title">About Us</h2>
+              <div class="slideshow-container">
+                
+                <div class="mySlides">
+                  <video muted controls poster="../public/images/Introducing Airbnb Adventures - Airbnb Adventures.jpg">
+                    <source src="../public/images/Introducing Airbnb Adventures - Airbnb Adventures - Airbnb.mp4" >
+                  </video> 
+                </div>
+              
+                <div class="mySlides">
+                  <video muted controls poster="../public/images/Introducing Airbnb Plus.jpg" >
+                 <source src="../public/images/Introducing Airbnb Plus - Airbnb.mp4" >
+                  </video>
+                </div>
+              
+                <div class="mySlides">
+                  <video muted controls poster="../public/images/What is Airbnb- - Travel Tips - Airbnb.jpg">
+                    <source src="../public/images/What is Airbnb- - Travel Tips - Airbnb.mp4">
+                  </video>
+                </div> 
+              
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              <br>
+              
+              <div class="pagenum_show">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+              </div> 
+              </div>
+              </div>  
+            <!--Products-->
+            <div class="categories1">
+            <div class="small-container">
+            <h2 class="title">Houses in Toronto</h2>
+            <div class="row">
+            
+              <div class="col-6">
+                <img src="../public/images/5.jpg" alt="">
+                 
+                   <h4>Cozy place in heart of leslieville
+                   <div class="host">Superhost</div></h4>        
+                   <div class="type"> <b>Private Room</b></div><div class="rating">Rate: 4.89
+                  <i class="fas fa-star"></i> 
+              </div>
+              
+              <h5 class="price">Price: <b>21$</b>/night</h5>
+            </div>
+            <div class="col-6">
+                <img src="../public/images/6.jpg" alt="">
+                <h4>Diva-Comfortable master room
+                 
+                   <div class="host">Superhost</div></h4>  
+                   <div class="type"> <b>Private Room</b></div>        
+                   <div class="rating">Rate: 4.9 
+                  <i class="fas fa-star"></i>
+              </div>
+              
+              <h5 class="price">Price: <b>75$</b>/night</h5>
+            </div>
+            <div class="col-6">
+                <img src="../public/images/2.jpg" alt="">
+                <h4>Brand new renovated room close to heart of Toronto 
+                  
+                   <div class="host">Superhost</div></h4>
+                   <div class="type"> <b>Private Room</b></div>
+                <div class="rating">Rate: 4.68
+                  <i class="fas fa-star"></i>
+              </div>
+              
+              <h5 class="price">Price:  <b>60$</b>/night</h5>
+            </div>
+            <div class="col-6">
+                <img src="../public/images/8.jpg" alt="">
+                <h4>A place near to CENTENNIAL COLLEGE
+        
+                  
+                   <div class="host">Superhost</div></h4>
+                   <div class="type"> <b>Private Room</b></div>
+                <div class="rating">Rate: 4.73
+                    <i class="fas fa-star"></i>
+                </div>
+               
+                <h5 class="price">Price:  <b>80$</b>/night</h5>
+            </div>
+            <div class="col-6"><a href="/9"></a>
+                <img src="../public/images/9.jpg" alt="" >
+                
+                  <h4>Casa Kapra - Modern Peaceful Private Room
+                    
+                     <div class="host">Superhost</div></h4>
+                     <div class="type"> <b>Private Room</b></div>
+                <div class="rating">Rate: 5.0
+                  <i class="fas fa-star"></i>
+              </div>
+              
+              <h5 class="price">Price:  <b>50$</b>/night</h5>
+            </div>
+            <div class="col-6">
+              <img src="../public/images/4.jpg" alt="">
+              <h4>Cutest House Around!!! 
+                
+                 <div class="host">Superhost</div></h4> 
+                 <div class="type"> <b>Entire House</b></div>
+              <div class="rating">Rate: 4.91
+                <i class="fas fa-star"></i>
+            </div>
+                <h5 class="price">Price:<b>89$</b>/night</h5>
+              </div>
+
+            </div>
+            </div>
+            </div>
+            
+            
+            <!--Testimonial-->
+            <h2 class="testimonial_title">Feedback from our users</h2> 
+            <div class="testimonial">
+                <div class="small-container"> 
+                <div class="row">
+                    <div class="col-3">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"As a traveler, I've had good experiences with the hosts & properties: and when I had a bait & switch situation, Airbnb immediately assisted me and I was refunded the next day...."</p>
+                        <div class="rating">Rate:
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <img src="../public/images/user1.jpg" alt="">
+                        <h3>Emma Green</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Excellent service with the Covid 19 situation. Quick reply to my query, my host on Gozo was just as helpful. Full refund within 24 hours...."</p>
+                        <div class="rating"><br>Rate:
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <img src="../public/images/user2.jpeg" alt="">
+                        <h3>Evelyn Nguyen</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"When we first stumbled upon this flat on AirBnB, it seemed almost too good to be true. There must be a catch!"</p>
+                        
+                        <div class="rating"><br>Rate:
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <img src="../public/images/user3.jpeg" alt="">
+                        <h3>Clara Pham</h3>
+                    </div>
+                </div>
+                </div>
+            </div>
+             
+            <!--Popup login-->
+            <div class="popup">
+            <div id="login_table" class="login_table">
+              <div class="login_form">
+                <form action="/contact-for-process" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()"> 
+                      <span class="login_close">&times;</span>
+                      <h1>Log In</h1>
+                     
+                      <label>Email:</label>
+                      <br>
+                          <input class="login_input" type="email" name="email" placeholder="Email">
+                          <br>
+                          <label>Password:</label>
+                          <br>
+                          <input class="login_input" type="password" name="psw2" placeholder="Password">
+                          <br>
+                      <div class="login_button">
+                          <button>Login</button>
+                      </div>
+                  </form>
+              </div>
+            </div>
+            
+            <div id="signup_table" class="signup_table">
+              <div class="signup_form">
+                <form action="/contact-for-process" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()"> 
+                      <span class="signup_close">&times;</span>
+                      <h1>Sign up</h1>
+                      <label>Email:</label>
+                      <br>
+                      <input class="signup_input" type="email" name="email" placeholder="Email">
+                      <br>
+                      <label>First Name:</label>
+                      <br>
+                      <input class="signup_input" type="text" name="lName" placeholder="Last Name">
+                      <br>
+                      <label>Last Name:</label>
+                      <br>
+                      <input class="signup_input" type="text" name="lName" placeholder="Last Name">
+                      <br>
+                      <label>Create a password:</label>
+                      <br>
+                      <input class="signup_input" type="password" name="psw" placeholder="Create a password">
+                      <br>
+                      <label>Confirm password:</label>
+                      <br>
+                      <input class="signup_input" type="password" name="psw2" placeholder="Confirm password">
+                      <br>
+                      
+                      <div class="signup_button">
+                        <button>Sign Up</button>
+                    </div>
+                  </form>
+              </div>
+            </div>
+            </div>
+            <!--Banner Ads-->
+            <div class="banner_ads">
+              <div class="small-container">
+              <h2 class="title">Adverstising box</h2>
+              <div class="row">
+                  <div class="col-2">
+                      <img src="../public/images/img4.jpg" alt="">
+                  </div>
+                      <div class="col-2">
+                      <p></p>
+                      <h1></h1>
+                      <small> You  need to take a lot of care on where to live and how to rent a house during your trip </small>
+                      <p>Go with us to see the best house with only 50$ per night.</p>
+                      <a href="" class="btn">Discover Now &#8594</a>
+                  </div>
+              </div>
+              </div>
+              </div>
+            
+            <!--Footer-->
+            {{> footer}}
+            
+            
+              <script src="../public/js/index.js"></script>
+            </body>
+            </html>
+            

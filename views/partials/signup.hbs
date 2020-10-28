@@ -1,0 +1,44 @@
+<div id="signup_table" class="signup_table">
+  <div class="signup_form">
+    <form action="/contact-for-process" method="POST" onsubmit="return validateForm(this)"> 
+          <span class="signup_close">&times;</span>
+          <h1>Sign up</h1>
+          
+          <label for="fname">First Name</label>
+          
+          <input class="signup_input" type="text" name="fname" value="" placeholder="First Name" required>
+          
+          <label for="lname">Last Name</label>
+          
+          <input class="signup_input" type="text" name="lname" value="" placeholder="Last Name" required>
+
+          <div class="gender">
+
+            <label for="gender">Gender:</label>
+
+            <input type="radio" id="gender_radio" name="gender" value="M" required/><label id="gender" for="genderM">Male</label>
+
+            <input type="radio" id="gender_radio" name="gender" value="F" required/><label id="gender" for="genderF">Female</label>
+
+          </div>
+
+          <label for="email">Email:</label>
+          <input class="signup_input" type="email" name="email" value="" placeholder="Email" required>
+          
+          
+          <label for="password">Create a password:</label>
+          
+          <input class="signup_input" type="password" name="psw" value="" placeholder="Create a password" required>
+          
+          <label for="password2">Confirm password:</label>
+          
+          <input class="signup_input" type="password" name="psw2" value="" placeholder="Confirm password" required>
+          
+        
+          <div class="signup_button">
+            <input type="submit" value="Submit" />
+             <a  class="navbar_links" ></a>
+        </div>
+      </form>
+  </div>
+</div>

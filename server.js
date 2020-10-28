@@ -4,16 +4,18 @@ var path = require("path");
 var multer = require("multer");
 var nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
-const exphbs = require("express-handlebars");
+const hbs = require('express-handlebars');
 const fs= require('fs');
-// MODULE INITIALIZATION
-const HTTP_PORT = process.env.PORT || 8080;
 
-app.engine(".hbs", exphbs({ extname: ".hbs" }));
-app.set("view engine", ".hbs");
+var HTTP_PORT = process.env.PORT || 8080;
 
+app.engine('.hbs', hbs({extname: '.hbs'}));
+app.set('view engine', '.hbs');
 
-app.use(bodyParser.urlencoded({ extended: false }));
+// START-UP FUNCTIONS
+function onHttpStart() {
+    console.log("Express http server listening on: " + HTTP_PORT);
+}
  
 
 const STORAGE = multer.diskStorage({
@@ -33,12 +35,9 @@ var transporter = nodemailer.createTransport({
     }
 });
 
-function onHttpStart() {
-    console.log("Express http server listing on: " + HTTP_PORT);
-}
-
 app.use(express.static("views"));
 app.use(express.static("public"));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get("/", function(req,res){
     res.render('index',{layout: false});

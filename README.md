@@ -14,6 +14,5 @@ app.use(json);//Another problem here typing but I do not need it any more
 =======
 //by mistake delete this line from server.js then cause npm ERR! code ELIFECYCLE
 const exphbs = require("express-handlebars");
-           
->>>>>>> e09953641f9124e5c032a3ff8ccb3e0e239995a8
 # web322assign2
+upgrade my css and partials

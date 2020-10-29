@@ -34,6 +34,12 @@ var transporter = nodemailer.createTransport({
         pass: 'web322HoangThuy'
     }
 });
+var myUser={
+    user_fname:'',
+    user_lname:'',
+    user_email:'',
+    username:''
+}
 
 app.use(express.static("views"));
 app.use(express.static("public"));
@@ -56,7 +62,11 @@ app.get("/dashboard", function(req,res){
 app.post("/contact-for-process", (req, res) => {
     
     const FORM_DATA = req.body;
-    res.render('dashboard',{layout: false});
+    myUser.user_fname=FORM_DATA.fname;
+    myUser.user_lname=FORM_DATA.lname;
+    myUser.user_email=FORM_DATA.email;
+    myUser.username=myUser.user_fname+ ' '+ myUser.user_lname;
+    res.render('dashboard',{data: myUser, layout: false});
     var emailOptions = {
         from: 'pthoang3web322@gmail.com',
         to: FORM_DATA.email,

@@ -59,7 +59,7 @@ app.get("/dashboard", function(req,res){
 
 });
 
-app.post("/contact-for-process", (req, res) => {
+app.post("/signup", (req, res) => {
     
     const FORM_DATA = req.body;
     myUser.user_fname=FORM_DATA.fname;

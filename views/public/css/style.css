@@ -145,6 +145,7 @@ color: #fff;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 99;
+    height: 70vh;
     font-size: 1.2rem;
     
 }
@@ -680,7 +681,7 @@ footer {
     padding: 30px 10px 30px 0px;
     color: #2f2f2f;
     background-color: #fff;
-    border-top: 1px solid #999;
+    border-top: 1px solid pink;
     bottom: 0;
     
   }
@@ -752,10 +753,14 @@ footer {
     color: #2f2f2f;
     margin-top: 1%;
     margin-bottom: 0%;
+    border-top: 1px solid #ffe6e6;
+    bottom: 0;
+    background-color: lightpink;
   }
   .legal p{
       align-items: center;
-     margin-left: 40%;
+     margin-left:15%;
+     margin-top: 1%;
   }
   .fa-facebook,.fa-twitter,.fa-linkedin,.fa-github{
     color: #000;
@@ -772,6 +777,9 @@ footer {
     
     .footer-nav {
       flex: 1 0px;
+    }
+    .legal p{
+        margin-left: 40%;
     }
   }
  /*Login page*/

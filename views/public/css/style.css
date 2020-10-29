@@ -678,7 +678,7 @@ border-radius: 3%;
 footer {
     display: flex;
     flex-flow: row wrap;
-    padding: 30px 10px 30px 0px;
+    padding: 30px 0px 30px 0px;
     color: #2f2f2f;
     background-color: #fff;
     border-top: 1px solid pink;
@@ -761,6 +761,7 @@ footer {
       align-items: center;
      margin-left:15%;
      margin-top: 1%;
+     margin-right: 0%;
   }
   .fa-facebook,.fa-twitter,.fa-linkedin,.fa-github{
     color: #000;
@@ -781,6 +782,11 @@ footer {
     .legal p{
         margin-left: 40%;
     }
+  }
+  @media screen and (max-width: 340px) {
+    .legal p{
+        margin-left: 2%;
+    }  
   }
  /*Login page*/
  .login_table {

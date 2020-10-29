@@ -12,20 +12,47 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     </head>
     <body>
-
-{{> welcome}}
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <div class="navbar_container">
+           <a href="" id="navbar_logo"><i class="fa fa-heartbeat" aria-hidden="true"></i>Airbnb</a> 
+           <div class="navbar_toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+           </div>
+           <ul class="navbar_menu" >
+               <li class="navbar_item">
+                   <a href="/dashboard" class="navbar_links" >Home</a>
+               </li>
+              
+                <li class="navbar_item">
+                    <a href="/"  class="navbar_links">Log out</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#" class="navbar_links">{{data.username}}</a>
+                </li>
+                <li class="navbar_btn" >
+                      <a href="/" href="#search_form" class="search_btn"><i class="fa fa-search" aria-hidden="true"></i>Search</a>
+                </li>
+           </ul>
+        </div>
+    </nav>
+</header>
+{{> welcome data}}
 <!--Products-->
-{{> product}}
+{{> product data}}
 <!--Promotion Section-->
-{{> promotion}}
+{{> promotion data}}
 <!--List-->
-{{> list}}
+{{> list data}}
 <!--Testimonial-->
-{{> testimonial}}
+{{> testimonial data}}
 <!--Banner Ads-->
-{{> advertise}}
+{{> advertise data}}
 <!--Footer-->
-{{> footer}}
+{{> footer data}}
 
 
   <script src="../public/js/index.js"></script>

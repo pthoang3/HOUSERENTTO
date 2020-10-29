@@ -16,3 +16,4 @@ app.use(json);//Another problem here typing but I do not need it any more
 const exphbs = require("express-handlebars");
            
 >>>>>>> e09953641f9124e5c032a3ff8ccb3e0e239995a8
+# web322assign2

@@ -61,7 +61,7 @@ app.post("/contact-for-process", (req, res) => {
         from: 'pthoang3web322@gmail.com',
         to: FORM_DATA.email,
         subject: 'Register Confirmation from PTH Airbnb',
-        html: '<p>Welcome ' + FORM_DATA.fname + 'to PTH Airbnb website.</p><p>Thank you for signing up our website. We hope you have best experience with us.</p><p>Regards,</p><p>Jane</p>'
+        html: '<p>Welcome ' + FORM_DATA.fname + ' to PTH Airbnb website.</p><p>Thank you for signing up our website. We hope you have best experience with us.</p><p>Regards,</p><p>Jane</p>'
     };
 
     transporter.sendMail(emailOptions, (error, info) => {
